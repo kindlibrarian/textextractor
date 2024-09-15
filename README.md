@@ -12,6 +12,7 @@ Extract text from imaged pages into a text file using pytesseract
 5. You can test the installation with two scans in the **test** directory.
    * Specify the path to this directory in **config.ini**.
    * Then execute **python extract.py**
+   * See the results in **cleaned_output.txt**
 
 ### Known issues:
 
