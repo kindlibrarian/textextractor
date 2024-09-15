@@ -14,7 +14,7 @@ Extract text from imaged pages into a text file using pytesseract
 
 * This code is not production code and has no error trapping.
 * This code has only been tested on png images although it probably works with other formats.
-* This code assumes that your OCR pages are saved with the format \<some prefix\>\_\<some number\>.PNG
+* This code assumes that your OCR pages are saved with the format \<some prefix\>\_\<some number\>.PNG and it will process the images in numeric order.
 * When a word is broken at the end of a line with a hypen, the code cannot distinguish between a hypenated word and a word where a hyphen has been injected.  It will remove the hypen when it removes the line breaks introduced by OCR.
 * Some book chapters begin with a large character.   The OCR engine, tesseract_ocr, does not handle this well and may skip the character or otherwise introduce weirdness.
 * The OCR engine may inject characters if it sees line drawings.  Normal illustrations are usually ok.
