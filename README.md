@@ -8,7 +8,7 @@ Extract text from imaged pages into a text file using pytesseract
     * A list of languages is here: https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html
     * The associated language models are in github here:  https://github.com/tesseract-ocr/tessdata
 3. Specify settings in config.ini.  In particular, be sure to specify **indir**, **prefix**, **img_rotate**, and **lang** in the general section.  
-4. Pages scan best when things in the margins are cropped out.  Use test_crop.py to help identify the best crop settings.  You can try different settings by editing the test section of config.ini.  Sometimes right and left pages require different crop settings.  When you have found the best settings, enter them into the evencrop and oddcrop section of the config.ini.
+4. Pages scan best when things in the margins are cropped out.  Use test_crop.py to help identify the best crop settings.  You can try different settings by editing the test section of config.ini.  Sometimes right and left pages require different crop settings.  When you have found the best settings, enter them into the evencrop and oddcrop section of the config.ini.  Then run **test_crop.py** and inspect **test_crop.png**
 5. You can test the installation with two scans in the **test** directory.
    * Specify the path to this directory in **config.ini**.
    * Then execute **python extract.py**
