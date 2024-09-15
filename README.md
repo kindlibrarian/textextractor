@@ -3,10 +3,10 @@ Extract text from imaged pages into a text file using pytesseract
 
 ### Getting started:
 1. Ensure that Tesseract OCR is available on your system and pytesseract is available in your python.
-  * A good guide can be found here:  https://builtin.com/articles/python-tesseract
+    * A good guide can be found here:  https://builtin.com/articles/python-tesseract
 2. If you are using a language other than English, download the tesseract module for that language.
-  * A list of languages is here: https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html
-  * The associated language models are in github here:  https://github.com/tesseract-ocr/tessdata
+    * A list of languages is here: https://tesseract-ocr.github.io/tessdoc/Data-Files-in-different-versions.html
+    * The associated language models are in github here:  https://github.com/tesseract-ocr/tessdata
 3. Specify settings in config.ini.  In particular, be sure to specify **indir**, **prefix**, **img_rotate**, and **lang** in the general section.  
 4. Pages scan best when things in the margins are cropped out.  Use test_crop.py to help identify the best crop settings.  You can try different settings by editing the test section of config.ini.  Sometimes right and left pages require different crop settings.  When you have found the best settings, enter them into the evencrop and oddcrop section of the config.ini.  
 
